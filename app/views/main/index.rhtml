@@ -1,0 +1,17 @@
+<%= start_form_tag :action => 'index' %>
+	<fieldset>
+		<legend>Suche</legend>
+		<label>Stichworte</label><%= text_field 'search', 'string' %>
+		<%= submit_tag 'Suche' %>
+	</fieldset>
+<%= end_form_tag %>
+<% unless @search.nil? or @search.results.nil? %>
+	<h1>Ergebnisse</h1>
+	<ul>
+	<% @search.results.each do |result| %>
+		<li><%= result.uri %></li>
+	<% end %>
+	</ul>
+<% else %>
+	<h1>Keine Ergebnisse</h1>
+<% end %>

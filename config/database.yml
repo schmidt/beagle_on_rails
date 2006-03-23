@@ -1,0 +1,27 @@
+development:
+  adapter: mysql
+  database: beagle_on_rails_development
+  username: root
+  password:
+#  socket: /path/to/your/mysql.sock
+  host: 192.168.0.140
+  port: 3306
+  
+test:
+  adapter: mysql
+  database: beagle_on_rails_test
+  username: root
+  password:
+#  socket: /path/to/your/mysql.sock
+  host: 192.168.0.140
+  port: 3306
+
+production:
+  adapter: mysql
+  database: beagle_on_rails_production
+  username: root
+  password: 
+#  socket: /path/to/your/mysql.sock
+  host: 192.168.0.140
+  port: 3306
+
