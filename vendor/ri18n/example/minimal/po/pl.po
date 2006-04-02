@@ -1,0 +1,36 @@
+# translation of pl.po to 
+# Copyright (C) 2005 Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# Mertz Denis <denis@familie-mertz-reich.de>, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: pl\n"
+"PO-Revision-Date: 2005-04-29 22:05+0200\n"
+"POT-Creation-Date: 2002-12-10 22:11+0100\n"
+"Last-Translator: Mertz Denis <denis@familie-mertz-reich.de>\n"
+"Language-Team: <fr@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 0;\n"
+"X-Generator: KBabel 1.9.1\n"
+
+msgid "I ate %i worm"
+msgid_plural "I ate %i worms"
+msgstr[0] "gggd"
+msgstr[1] "fdgf"
+msgstr[2] "fhfh"
+
+msgid "I talk like a duck"
+msgstr ""
+
+msgid "I walk like a duck"
+msgstr ""
+
+msgid "Quack Quack !!"
+msgstr ""
+
+msgid "Yoo"
+msgstr ""
+

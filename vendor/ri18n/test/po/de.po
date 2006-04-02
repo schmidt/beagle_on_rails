@@ -1,0 +1,164 @@
+msgid "%i file"
+msgid_plural "%i files"
+msgstr[0] "%i datei"
+msgstr[1] "%i dateien"
+
+msgid "Road"
+msgstr "Straße"
+
+msgid "Orphaned pages removed"
+msgstr ""
+
+msgid "co- or authored:"
+msgstr "Co- or Autor von:"
+
+msgid "Based on"
+msgstr ""
+
+msgid "See current"
+msgstr ""
+
+msgid "Created"
+msgstr ""
+
+msgid "Textile formatting tips"
+msgstr ""
+
+msgid "Search"
+msgstr "Suchen"
+
+msgid "Submit"
+msgstr ""
+
+msgid "#{@actioned} on #{@page.pretty_created_at} by #{@auth_link}"
+msgstr ""
+
+msgid "Print"
+msgstr "Drucken"
+
+msgid "category #{@category}"
+msgstr ""
+
+msgid "Views"
+msgstr ""
+
+msgid "Edit"
+msgstr "Editieren"
+
+msgid "All pages in #{@set_name} listed alphabetically"
+msgstr ""
+
+msgid "Summer"
+msgstr "Sommer"
+
+msgid "summer"
+msgstr "Sommer"
+
+msgid "blue"
+msgstr ""
+
+msgid "unlocks page"
+msgstr ""
+
+msgid "Rollback"
+msgstr ""
+
+msgid "See changes"
+msgstr "Änderungen sehen"
+
+msgid "Orphaned Pages"
+msgstr ""
+
+msgid "Revised"
+msgstr ""
+
+msgid "Hide changes"
+msgstr "Änderungen ausblenden"
+
+msgid "Home Page"
+msgstr "Startseite"
+
+msgid "Cooking test"
+msgstr "Kochtest"
+
+msgid "red"
+msgstr ""
+
+msgid "#{@interpolation} test"
+msgstr ""
+
+msgid "Editing"
+msgstr ""
+
+msgid "Forward in time"
+msgstr ""
+
+msgid "Revision from #{@revision.pretty_created_at} by"
+msgstr ""
+
+msgid "Linked from"
+msgstr ""
+
+msgid "Creating"
+msgstr ""
+
+msgid "category \'#{@category}\'"
+msgstr ""
+
+msgid "untranslated"
+msgstr ""
+
+msgid "Powered by"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Back in time"
+msgstr "Zurück"
+
+msgid "Edit Web"
+msgstr "Konfigurieren"
+
+msgid "Pages in #{@set_name} that no other page reference"
+msgstr ""
+
+msgid "wanted by"
+msgstr ""
+
+msgid "Wanted Pages"
+msgstr ""
+
+msgid "Authors"
+msgstr "Autoren"
+
+msgid "Test String"
+msgstr "Test Textfolge"
+
+msgid "the web"
+msgstr ""
+
+msgid "This site is running on"
+msgstr ""
+
+msgid "Edit Page"
+msgstr "Seite Editieren"
+
+msgid "Export"
+msgstr "Exportieren"
+
+msgid "Recently Revised"
+msgstr ""
+
+msgid "All Pages"
+msgstr "Alle Seiten"
+
+msgid "AnonymousCoward"
+msgstr ""
+
+msgid "Unexisting pages that other pages in #{@set_name} reference"
+msgstr ""
+
+msgid "Feeds"
+msgstr "Feeds"
+

@@ -1,0 +1,13 @@
+$: << File.dirname(__FILE__) + '/../../lib'
+
+require 'gettext'
+require 'i18nservice'
+require 'i18nconfig'
+
+task :default => :gettext
+
+Rake::GettextTask.new do |t|
+    t.new_langs = ['pl', 'lt']
+    t.source_files = ['app.rb']
+    t.verbose = true
+end

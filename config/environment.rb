@@ -51,3 +51,11 @@ end
 # end
 
 # Include your application configuration below
+if File.directory?("#{RAILS_ROOT}/vendor/ri18n")
+	require "#{RAILS_ROOT}/vendor/ri18n/lib/i18nservice"
+else
+	require "rubygems"
+	require "i18nservice"
+end
+require "#{RAILS_ROOT}/config/i18nconfig"
+I18nService.instance.lang = STANDARD_LANGUAGE = "de"

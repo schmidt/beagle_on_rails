@@ -1,0 +1,22 @@
+= Ri18n Changelog
+
+== Version 0.0.3
+
+* Wrote USAGE documentation
+* A bit of code cleanup and refactoring
+* Not-gem packages use setup.rb for installation 
+* write gettext compatible PO headers; 
+  You can now use POedit (or other translation tools) to work on PO files. 
+* add Rake::GettextTask for defining a gettext task in a more standard way
+
+== Version 0.0.2
+
+* first charset conversion support (with iconv)
+* read/parse/save/write of PO headers
+* keep comments in PO files intact when updating
+* Support single quotes in translation strings
+
+== Version 0.0.1
+
+* Initial release
+

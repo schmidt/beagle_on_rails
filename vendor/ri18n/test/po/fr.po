@@ -1,0 +1,163 @@
+msgid "Road"
+msgstr "Route"
+
+msgid "Orphaned pages removed"
+msgstr "Pages orphelines effacées"
+
+msgid "co- or authored:"
+msgstr "co- ou auteur de :"
+
+msgid "Based on"
+msgstr "Basé sur"
+
+msgid "See current"
+msgstr "Version actuelle"
+
+msgid "Created"
+msgstr "Créé"
+
+msgid "Textile formatting tips"
+msgstr "Astuces de formatage Textile"
+
+msgid "Search"
+msgstr "Recherche"
+
+msgid "Submit"
+msgstr "Envoyer"
+
+msgid "#{@actioned} on #{@page.pretty_created_at} by #{@auth_link}"
+msgstr "#{@actioned} le #{@page.pretty_created_at} par #{@auth_link}"
+
+msgid "Print"
+msgstr "Imprimer"
+
+msgid "category #{@category}"
+msgstr "la catégorie #{@category}"
+
+msgid "Views"
+msgstr "Vues"
+
+msgid "Edit"
+msgstr "Édition"
+
+msgid "All pages in #{@set_name} listed alphabetically"
+msgstr "Toutes les pages dans #{@set_name} par ordre alphabétique"
+
+msgid "Summer"
+msgstr "Été"
+
+msgid "summer"
+msgstr "été"
+
+msgid "blue"
+msgstr "bleu"
+
+msgid "unlocks page"
+msgstr "déverrouille la page"
+
+msgid "Rollback"
+msgstr ""
+
+msgid "See changes"
+msgstr "Voir les modifications"
+
+msgid "Orphaned Pages"
+msgstr "Pages orphelines"
+
+msgid "Revised"
+msgstr "Modifié"
+
+msgid "Hide changes"
+msgstr "Cacher les modifications"
+
+msgid "Home Page"
+msgstr "Accueil"
+
+msgid "Cooking test"
+msgstr "Test de cuisson"
+
+msgid "red"
+msgstr ""
+
+msgid "#{@interpolation} test"
+msgstr ""
+
+msgid "Editing"
+msgstr "Édition de"
+
+msgid "Forward in time"
+msgstr "Avancer"
+
+msgid "Revision from #{@revision.pretty_created_at} by"
+msgstr "Version de #{@revision.pretty_created_at} par"
+
+msgid "Linked from"
+msgstr "Lié depuis"
+
+msgid "Creating"
+msgstr "Création de"
+
+msgid "category \'#{@category}\'"
+msgstr ""
+
+msgid "untranslated"
+msgstr ""
+
+msgid "Powered by"
+msgstr ""
+
+msgid "Cancel"
+msgstr "Annuler"
+
+msgid "Back in time"
+msgstr "Version précédente"
+
+msgid "Edit Web"
+msgstr "Configuration"
+
+msgid "Pages in #{@set_name} that no other page reference"
+msgstr "Pages dans #{@set_name} qui ne sont pas référencées par d'autres pages"
+
+msgid "wanted by"
+msgstr "recherchée par"
+
+msgid "Wanted Pages"
+msgstr "Pages manquantes"
+
+msgid "Authors"
+msgstr "Auteurs"
+
+msgid "Test String"
+msgstr "Chaîne de Test"
+
+msgid "the web"
+msgstr "le web"
+
+msgid "This site is running on"
+msgstr "Ce site utilise"
+
+msgid "Edit Page"
+msgstr "Édition"
+
+msgid "Export"
+msgstr "Exporter"
+
+msgid "Recently Revised"
+msgstr "Modifications récentes"
+
+msgid "All Pages"
+msgstr "Toutes les pages"
+
+msgid "AnonymousCoward"
+msgstr "PaysanAnonyme"
+
+msgid "Unexisting pages that other pages in #{@set_name} reference"
+msgstr "Pages non-existantes dans #{@set_name} référencées par d'autres pages "
+
+msgid "Feeds"
+msgstr "Feeds"
+
+msgid "%i file"
+msgid_plural "%i files"
+msgstr[0] "%i fichier"
+msgstr[1] "%i fichiers"

@@ -1,0 +1,45 @@
+# Rakefile for ri18n       -*- ruby -*-
+
+require 'rubygems'
+require 'rake/gempackagetask'
+require 'rake/testtask'
+require 'rake/rdoctask'
+require 'rake/clean'
+
+CLEAN << 'pkg'  << 'html'
+
+task :default => [:test]
+
+Rake::TestTask.new do |t|
+    t.libs << "test"
+    t.verbose = true
+end
+
+Rake::RDocTask.new do |rd|
+    rd.main = "README"
+    rd.options << '--charset utf-8 --template=jamis --line-numbers --inline-source'
+    rd.options << '--tab-width=2 --webcvs=http://svn.berlios.de/viewcvs/ri18n/trunk/'
+    rd.rdoc_files.include("README", "CHANGES", "USAGE", "INSTALL", "lib/**/*.rb")
+end
+
+desc "publish Rdoc documentation"
+task :pub_rdoc => [:rdoc] do
+  system('scp -r -C html/* dm1@shell.berlios.de:/home/groups/ri18n/htdocs/rdoc')
+end
+
+gemspec = eval(File.read('ri18n.gemspec'))
+Rake::GemPackageTask.new(gemspec) do |pkg|
+    pkg.need_zip = true
+    pkg.need_tar = true
+end
+
+  Rake::PackageTask.new("ri18n", gemspec.version) do |p|
+    p.need_tar = true
+    p.need_zip = true
+    p.need_tar_bz2 = true
+# the list of glob expressions for files comes from ri18n.gemspec
+    p.package_files.include($__ri18n_source_patterns)
+    p.package_files.include(['ri18n.gemspec', 'rakefile', 'setup.rb', 'example/**/*', 
+                            'test/**/*', '[A-Z]*'])
+  end
+

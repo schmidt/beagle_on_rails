@@ -1,17 +1,23 @@
 <%= start_form_tag :action => 'index' %>
 	<fieldset>
-		<legend>Suche</legend>
-		<label>Stichworte</label><%= text_field 'search', 'string' %>
-		<%= submit_tag 'Suche' %>
+		<legend><%= _('Search') %></legend>
+		<label for="search_string"><%= _('Keywords') %></label> <%= text_field 'search', 'string' %>
+		<%= submit_tag _('Search') %>
+		<%= _('Order') %>:
+			<%= radio_button("search", "order", "time") %><label for="search_order_time"><%= _('Date') %></label>
+			<%= radio_button("search", "order", "score") %><label for="search_order_score"><%= _('Score') %></label>
 	</fieldset>
 <%= end_form_tag %>
-<% unless @search.nil? or @search.results.nil? %>
-	<h1>Ergebnisse</h1>
-	<ul>
-	<% @search.results.each do |result| %>
-		<li><%= result.uri %></li>
+<% unless @search_results.nil? %>
+	<h1><%= _('Results') %></h1>
+	<p>Erster Treffer nach <%= @search.first_hit %> s, Gesamtdauer: <%= @search.total_time %> s, <%= @search.number_of_hits %> Treffer</p>
+	<%= pagination_links(@result_pages) %>
+	<ol>
+	<% @search_results.each do |result| %>
+		<%= self.send result.type.underscore.strip, result  %>
 	<% end %>
-	</ul>
+	</ol>
+	<%= pagination_links(@result_pages) %>
 <% else %>
-	<h1>Keine Ergebnisse</h1>
+	<h1><%= _('No results') %></h1>
 <% end %>

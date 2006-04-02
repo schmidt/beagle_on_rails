@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2002-12-10 22:11+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 0;\n"
+
+msgid "I ate %i worm"
+msgid_plural "I ate %i worms"
+msgstr[0] "J'ai mangé %i ver"
+msgstr[1] "J'ai mangé %i vers"
+
+msgid "I talk like a duck"
+msgstr "Je parle comme un cannard"
+
+msgid "I walk like a duck"
+msgstr "Je marche comme un cannard"
+
+msgid "Quack Quack !!"
+msgstr "Coin Coin"
+

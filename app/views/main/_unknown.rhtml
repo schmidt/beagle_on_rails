@@ -1,0 +1,29 @@
+                <li><strong><%= @item.uri %></strong>
+                        <dl>
+				<% unless @item.snip.nil? %>
+                                <dt><%= _('Snip') %></dt>
+                                        <dd><%= @item.snip %>
+				<% end %>
+				<% unless @item.type.nil? %>
+                                <dt><%= _('File type') %></dt>
+                                        <dd><%= @item.type %></dd>
+				<% end %>
+				<% unless @item.mime_type.nil? %>
+                                <dt><%= _('Mime type') %></dt>
+                                        <dd><%= @item.mime_type %></dd>
+				<% end %>
+				<% unless @item.time.nil? %>
+                                <dt><%= _('Date') %></dt>
+					<dd><%= time_ago_in_words @item.time %> alt (<%= @item.time.to_formatted_s :db %>) %></dd>
+				<% end %>
+				<% unless @item.score.nil? %>
+                                <dt><%= _('Score') %></dt>
+                                        <dd><%= @item.score %></dd>
+				<% end %>
+				<% if false %>
+				<dt><%= _('Misc') %></dt>
+					<dd><pre><%= @item.divers.to_yaml %></pre></dd>
+				<% end %>
+                        </dl>
+                </li>
+

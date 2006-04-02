@@ -1,0 +1,27 @@
+===What is Ri18n?
+Ri18n is an internationalization and localization library for Ruby applications.
+ 
+* 100 % ruby. Use ruby standard tools:
+  * Rake tasks for managing/updating tranlation files (PO files)
+  * Ruby Gems for creating translation packages
+* Take inspiration from Gettext and be (partially) compatible with it:
+  * Use _( ) functions for marking the strings to translate.
+  * Use PO format for storing translation messages.
+
+===History:
+* See CHANGES[http://ri18n.berlios.de/rdoc/files/CHANGES.html]
+
+===Resources:
+* {Project homepage}[http://ri18n.berlios.de]
+* {Project page on Berlios}[http://developer.berlios.de/projects/ri18n]
+* {Developer documentation (Rdoc)}[http://ri18n.berlios.de/rdoc/index.html]
+* {Browse SVN repository}[http://svn.berlios.de/viewcvs/ri18n/trunk]
+* Download latest svn version: 
+
+  svn checkout svn://svn.berlios.de/ri18n
+
+===License:
+* GPL
+
+===Contact:
+Author: Denis Mertz <dmertz at online dot de>

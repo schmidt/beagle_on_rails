@@ -1,0 +1,96 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Free Software Foundation, Inc.
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2002-12-10 22:11+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n == 0;\n"
+
+msgid "Beagle on Rails"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "File type"
+msgstr ""
+
+msgid "Keywords"
+msgstr ""
+
+msgid "Mime type"
+msgstr ""
+
+msgid "Misc"
+msgstr ""
+
+msgid "No results"
+msgstr ""
+
+msgid "Order"
+msgstr ""
+
+msgid "Path"
+msgstr ""
+
+msgid "Results"
+msgstr ""
+
+msgid "Score"
+msgstr ""
+
+msgid "Search"
+msgstr ""
+
+msgid "Snip"
+msgstr ""
+
+msgid "about"
+msgstr ""
+
+msgid "day"
+msgstr ""
+
+msgid "days"
+msgstr ""
+
+msgid "half a minute"
+msgstr ""
+
+msgid "hour"
+msgstr ""
+
+msgid "hours"
+msgstr ""
+
+msgid "less than #{20} seconds"
+msgstr ""
+
+msgid "less than #{s} seconds"
+msgstr ""
+
+msgid "less than 10 seconds"
+msgstr ""
+
+msgid "less than 5 seconds"
+msgstr ""
+
+msgid "less than a minute"
+msgstr ""
+
+msgid "minute"
+msgstr ""
+
+msgid "minutes"
+msgstr ""
+
