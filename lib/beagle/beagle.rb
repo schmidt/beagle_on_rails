@@ -1,6 +1,7 @@
 class Beagle
 
 	BEAGLE_NIL = '(null)'
+	BEAGLE_QUERY = '/usr/bin/beagle-query'
 
 	class << self
 
@@ -20,8 +21,10 @@ class Beagle
 			return [] if query.nil? or query.empty?
 			query.strip!
 			return [] if query.empty? or query.length == 1 or query[0..1] == '--'
+			
+			query.gsub! /[^0-9a-zA-Z ]/, ''
 
-			lines = `beagle-query --verbose #{query}`[3..-1]
+			lines = `#{BEAGLE_QUERY} --verbose #{query}`[3..-1]
 			results = []
 			@@first_hit = 0.0
 			@@total_time = 0.0
