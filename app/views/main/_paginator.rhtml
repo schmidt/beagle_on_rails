@@ -1,8 +1,8 @@
 	<table>
 	<% params = {:window_size => 10, :link_to_current_page => true, :always_show_anchors => false} %>
 		<tr>
-			<td>
-			<% if @paginator.current.next %>
+			<td class="prev">
+			<% if @paginator.current.previous %>
 				<%= link_to(image_tag( 'b' ), {:page => @paginator.current.previous}) %>
 			<% else %>
 				<%= image_tag 'b' %>
@@ -17,7 +17,7 @@
 		<% end %>
 			</td>
 	<% end %>
-			<td>
+			<td class="next">
 			<% if @paginator.current.next %>
 				<%= link_to(image_tag( 'agle' ), {:page => @paginator.current.next}) %>
 			<% else %>
