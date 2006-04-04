@@ -1,23 +1,40 @@
-<%= start_form_tag :action => 'index' %>
-	<fieldset>
-		<legend><%= _('Search') %></legend>
-		<label for="search_string"><%= _('Keywords') %></label> <%= text_field 'search', 'string' %>
-		<%= submit_tag _('Search') %>
-		<%= _('Order') %>:
-			<%= radio_button("search", "order", "time") %><label for="search_order_time"><%= _('Date') %></label>
-			<%= radio_button("search", "order", "score") %><label for="search_order_score"><%= _('Score') %></label>
-	</fieldset>
-<%= end_form_tag %>
-<% unless @search_results.nil? %>
+<div id="results_form">
+	<%= render :partial => 'form' %>
+</div>
+
+<div id="result_header">
 	<h1><%= _('Results') %></h1>
-	<p>Erster Treffer nach <%= @search.first_hit %> s, Gesamtdauer: <%= @search.total_time %> s, <%= @search.number_of_hits %> Treffer</p>
-	<%= pagination_links(@result_pages) %>
-	<ol>
-	<% @search_results.each do |result| %>
-		<%= self.send result.type.underscore.strip, result  %>
-	<% end %>
-	</ol>
-	<%= pagination_links(@result_pages) %>
+	<p><%= _('Results') %> <strong><%= @result_pages.current.first_item %></strong> - 
+				<strong><%= @result_pages.current.last_item %></strong>
+		<%= _('of') %> <strong><%= @search.number_of_hits %></strong>
+		<%= _('for') %> <strong><%= @search.string %></strong>. 
+		(<strong><%= @search.total_time %></strong> <%= _('seconds') %>)
+	</p>
+	<br />
+</div>
+
+<% if @search_results.length > 0 %>
+	<ul id="search_results">
+		<% @search_results.each do |result| %>
+			<%= self.send result.type.underscore.strip, result  %>
+		<% end %>
+	</ul>
+
+	<div id="paginator">
+		<% @paginator = @result_pages  %>
+		<%= render( {:partial => 'paginator'} ) %>
+	</div>
 <% else %>
-	<h1><%= _('No results') %></h1>
+	<h2><%= _('No results') %></h2>
 <% end %>
+
+
+<div id="main_form" class="result_page">
+	<%= # TODO Fix the double ids in this partial
+	%>
+	<%= render :partial => 'form' %>
+</div>
+
+<div id="footer">
+	<%= render :partial => 'footer' %>
+</div>

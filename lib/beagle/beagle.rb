@@ -17,6 +17,9 @@ class Beagle
 	
 		def find query, extension = nil
 #			puts "query: \"#{query}\" extension: nil"
+			@@first_hit = 0.0
+			@@total_time = 0.0
+			@@number_of_hits = 0
  
 			return [] if query.nil? or query.empty?
 			query.strip!
@@ -26,9 +29,6 @@ class Beagle
 
 			lines = `#{BEAGLE_QUERY} --verbose #{query}`[3..-1]
 			results = []
-			@@first_hit = 0.0
-			@@total_time = 0.0
-			@@number_of_hits = 0
 			unless lines.nil?
 				results = parse_results lines
 			end

@@ -1,29 +1,30 @@
-                <li><strong><%= @item.uri %></strong>
-                        <dl>
-				<% unless @item.snip.nil? %>
-                                <dt><%= _('Snip') %></dt>
-                                        <dd><%= @item.snip %>
-				<% end %>
-				<% unless @item.type.nil? %>
-                                <dt><%= _('File type') %></dt>
-                                        <dd><%= @item.type %></dd>
-				<% end %>
-				<% unless @item.mime_type.nil? %>
-                                <dt><%= _('Mime type') %></dt>
-                                        <dd><%= @item.mime_type %></dd>
-				<% end %>
-				<% unless @item.time.nil? %>
-                                <dt><%= _('Date') %></dt>
-					<dd><%= time_ago_in_words @item.time %> alt (<%= @item.time.to_formatted_s :db %>) %></dd>
-				<% end %>
-				<% unless @item.score.nil? %>
-                                <dt><%= _('Score') %></dt>
-                                        <dd><%= @item.score %></dd>
-				<% end %>
-				<% if false %>
-				<dt><%= _('Misc') %></dt>
-					<dd><pre><%= @item.divers.to_yaml %></pre></dd>
-				<% end %>
-                        </dl>
-                </li>
+<li class="unknown">
+	<strong><%= link_to @item.uri, @item.uri %></strong>
+	<% unless @item.snip.nil? %>
+		<p class="snip"><%= convert_markup @item.snip %></p>
+	<% end %>
+
+	<p class="meta">
+	<% unless @item.time.nil? %>
+		<span class="mime_type"><%= time_ago_in_words @item.time %> alt (<%= @item.time.to_formatted_s :db %>)</span>
+	<% end %>
+
+	<% unless @item.score.nil? %>
+		<span class="score"> - <%= @item.score %> - </span>
+	<% end %>
+
+	<% unless @item.mime_type.nil? %>
+		<span class="mime_type"><%= @item.mime_type %></span>
+	<% end %>
+
+	<a href="javascript:Element.toggle('result_number_<%= @counter %>')"><%= _('more') %>...</a>
+	</p>
+
+	<p class="path"><%= link_to @item.uri, @item.uri %></p>
+
+	<pre style="display:none" id="result_number_<%= @counter %>">
+		<%= @item.divers.to_yaml %>
+	</pre>
+
+</li>
 

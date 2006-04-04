@@ -25,14 +25,17 @@ msgstr "Datum"
 msgid "File type"
 msgstr "Dateityp"
 
-msgid "Keywords"
-msgstr "Suchbegriffe"
+msgid "Framework by"
+msgstr "Framework von"
 
-msgid "Mime type"
-msgstr "Mime-Typ"
+msgid "GPLed by"
+msgstr "GPLt von"
 
-msgid "Misc"
-msgstr "Divers"
+msgid "More information on this project at"
+msgstr "Mehr Informationen über dieses Projekt auf"
+
+msgid "Next"
+msgstr "Vorwärts"
 
 msgid "No results"
 msgstr "Keine Ergebnisse"
@@ -40,20 +43,20 @@ msgstr "Keine Ergebnisse"
 msgid "Order"
 msgstr "Reihenfolge"
 
-msgid "Path"
-msgstr "Pfad"
+msgid "Previous"
+msgstr "Zurück"
 
 msgid "Results"
 msgstr "Ergebnisse"
+
+msgid "Results by"
+msgstr "Ergebnisse von"
 
 msgid "Score"
 msgstr "Trefferquote"
 
 msgid "Search"
 msgstr "Suche"
-
-msgid "Snip"
-msgstr "Ausschnitt"
 
 msgid "about"
 msgstr "ungefähr"
@@ -63,6 +66,9 @@ msgstr "Tag"
 
 msgid "days"
 msgstr "Tage"
+
+msgid "for"
+msgstr "für"
 
 msgid "half a minute"
 msgstr "einer halbe Minute"
@@ -84,4 +90,13 @@ msgstr "Minute"
 
 msgid "minutes"
 msgstr "Minuten"
+
+msgid "more"
+msgstr "mehr"
+
+msgid "of"
+msgstr "von"
+
+msgid "seconds"
+msgstr "Sekunden"
 

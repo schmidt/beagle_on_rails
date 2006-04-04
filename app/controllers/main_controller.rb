@@ -18,10 +18,11 @@ class MainController < ApplicationController
 		unless @search.nil?
 			@search_results = @search.results
 			@result_pages = Paginator.new self, @search_results.length, HITS_PER_PAGE, @params['page']
-			param = @result_pages.current.to_sql
-			@search_results = @search_results[param[1]..(param[1] + param[0])]
+			@search_results = 
+				@search_results[(@result_pages.current.first_item - 1)..@result_pages.current.last_item - 1]
 		else
 			@search = Search.new Hash.new 
+			render :action => 'start'
 		end
 	end
 end

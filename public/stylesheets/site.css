@@ -1,3 +1,157 @@
 body{
-	font-family: sans-serif;
+	font-family: trebuchet ms, luxi sans, sans-serif;
+	font-size: 96%;
+	background: url('../images/title_bg.png') repeat-x;
+}
+
+h1#header{
+	margin: auto;
+	margin-top: 40px;
+	width: 262px;
+	height: 134px;
+	background-image: url('../images/beagle-logo.png');
+	text-indent: -5000px;
+}
+
+div#main_form{
+	margin-top: 2em;
+}
+
+div#results_form{
+	background: url('../images/beagle-logo-s.png') no-repeat;
+	padding-left: 147px;
+}
+
+
+div#main_form form fieldset p{
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+div#results_form form fieldset p#input{
+	float:left;
+	margin-bottom: 0px;
+}
+div#results_form form fieldset p#submit{
+	float:left;
+	margin-bottom: 0px;
+}
+div#results_form form fieldset p#radios{
+	float:left;
+	margin-top: 0px;
+	clear: left;
+}
+
+div#result_header, div#main_form.result_page{
+	margin: 0;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	background-color: #f6f6f6;
+	-moz-border-radius: 2.5px;
+	margin-bottom: 2em;
+}
+
+
+div#result_header h1{
+	float: left;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 0;
+}
+div#result_header p{
+	float: right;
+	margin: 0;
+	padding: 0.1em;
+}
+div#result_header br{
+	clear: both;
+}
+
+div#paginator{
+	text-align: center;
+	margin-bottom: 1em;
+}
+div#paginator table{
+	margin: auto;
+}
+div#paginator table td{
+	margin: 0;
+	padding: 0;
+}
+
+div#paginator table td.prev{
+	text-align: right;
+}
+div#paginator table td.next{
+	text-align: left;
+}
+
+form fieldset{
+	border: none;
+}
+
+form fieldset legend{
+	display: none;
+}
+
+div#footer p{
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #66e;
+}
+a:visited {
+	color: #a6a;
+}
+a:active {
+	color: #fff !important;
+	background-color: #f50;
+}
+a:hover {
+	color: #f50;
+	text-decoration: underline;
+}
+a img {
+	border: 0;
+	vertical-align: middle;
+}
+
+/***
+ *  CSS for different search result types 
+ */
+
+ul#search_results{
+	list-style-type: none;
+	padding: 0;
+	margin: 0 2em;
+}
+
+ul#search_results li{
+	padding-left: 50px;
+	margin: 1em 0;
+}
+
+ul#search_results li.unknown   { background: url('../images/system-search.png') no-repeat; }
+ul#search_results li.file      { background: url('../images/emblem-file.png') no-repeat; }
+ul#search_results li.picture   { background: url('../images/emblem-picture.png') no-repeat; }
+ul#search_results li.directory { background: url('../images/emblem-folder.png') no-repeat; }
+ul#search_results li.web       { background: url('../images/icon-web.png') no-repeat 10px 0px; }
+
+ul#search_results li p{
+	margin: 0;
+	padding: 0;
+}
+
+ul#search_results li p.snip{
+	font-size: 0.8em;
+	color: #333;
+}
+
+ul#search_results li p.meta{
+	color: #f50;
 }

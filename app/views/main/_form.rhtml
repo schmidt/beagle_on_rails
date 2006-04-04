@@ -1,0 +1,16 @@
+<%= start_form_tag( {:action => 'index'}, {:method => 'post'} ) %>
+        <fieldset>
+                <legend><%= _('Search') %></legend>
+		<p id="input">
+                	<%= text_field 'search', 'string', 'size' => '55' %>
+		</p>
+		<p id="submit">
+	                <%= submit_tag _('Search') %>
+		</p>
+		<p id="radios">
+                <%= _('Order') %>:
+                        <%= radio_button("search", "order", "score") %><label for="search_order_score"><%= _('Score') %></label>
+                        <%= radio_button("search", "order", "time") %><label for="search_order_time"><%= _('Date') %></label>
+		</p>
+        </fieldset>
+<%= end_form_tag %>

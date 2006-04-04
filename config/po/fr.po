@@ -25,6 +25,12 @@ msgstr ""
 msgid "File type"
 msgstr ""
 
+msgid "Framework by"
+msgstr ""
+
+msgid "GPLed by"
+msgstr ""
+
 msgid "Keywords"
 msgstr ""
 
@@ -32,6 +38,12 @@ msgid "Mime type"
 msgstr ""
 
 msgid "Misc"
+msgstr ""
+
+msgid "More information on this project at"
+msgstr ""
+
+msgid "Next"
 msgstr ""
 
 msgid "No results"
@@ -43,7 +55,13 @@ msgstr ""
 msgid "Path"
 msgstr ""
 
+msgid "Previous"
+msgstr ""
+
 msgid "Results"
+msgstr ""
+
+msgid "Results by"
 msgstr ""
 
 msgid "Score"
@@ -62,6 +80,9 @@ msgid "day"
 msgstr ""
 
 msgid "days"
+msgstr ""
+
+msgid "for"
 msgstr ""
 
 msgid "half a minute"
@@ -92,5 +113,14 @@ msgid "minute"
 msgstr ""
 
 msgid "minutes"
+msgstr ""
+
+msgid "more"
+msgstr ""
+
+msgid "of"
+msgstr ""
+
+msgid "seconds"
 msgstr ""
 

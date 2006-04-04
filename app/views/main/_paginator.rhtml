@@ -1,0 +1,41 @@
+	<table>
+	<% params = {:window_size => 10, :link_to_current_page => true, :always_show_anchors => false} %>
+		<tr>
+			<td>
+			<% if @paginator.current.next %>
+				<%= link_to(image_tag( 'b' ), {:page => @paginator.current.previous}) %>
+			<% else %>
+				<%= image_tag 'b' %>
+			<% end %>
+			</td>
+	<% pagination_links_each(@paginator, params) do |n| %>
+			<td>
+		<% if @paginator.current_page.to_i == n.to_i %>
+			<%= image_tag 'e' %>
+		<% else %>
+			<%= link_to( image_tag( 'e' ), :page => n ) %>
+		<% end %>
+			</td>
+	<% end %>
+			<td>
+			<% if @paginator.current.next %>
+				<%= link_to(image_tag( 'agle' ), {:page => @paginator.current.next}) %>
+			<% else %>
+				<%= image_tag 'agle' %>
+			<% end %>
+			</td>
+		</tr>
+		<tr>
+			<td class="prev"><%= link_to(_('Previous'), {:page => @paginator.current.previous})  + " | " if @paginator.current.previous %></td>
+	<% pagination_links_each(@paginator, params) do |n| %>
+			<td>
+		<% if @paginator.current_page.to_i == n.to_i %>
+			<%= n.to_s %>
+		<% else %>
+			<%= link_to( n.to_s, :page => n ) %>
+		<% end %>
+			</td>
+	<% end %>
+			<td class="next"><%= " | " + link_to(_('Next'), {:page => @paginator.current.next}) if @paginator.current.next %></td>
+		</tr>
+	</table>
