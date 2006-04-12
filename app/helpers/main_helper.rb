@@ -7,7 +7,7 @@ module MainHelper
 
 	def convert_markup old
 		new = old.gsub /(<font color="red">)|(<\/font>)/, ""
-		return new.gsub /<(\/?)b>/, '<\1strong>'
+		return new.gsub( /<(\/?)b>/, '<\1strong>' )
 	end
 
 	def web_history item
