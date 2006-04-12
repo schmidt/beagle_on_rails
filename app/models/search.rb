@@ -16,9 +16,13 @@ class Search < ActionWebService::Struct
 	member :number_of_hits, :int
 
 	def initialize params
-		@order = 'score'
-		@key = params[:key] unless params[:key].nil?
-		@order = params[:order] unless params[:order].nil?
+		@key ||= params[:key]
+		@order = params[:order] || 'score'
+		
+		@results ||= params[:results]
+		@first_hit ||= params[:first_hit]
+		@total_time ||= params[:total_time]
+		@number_of_hits ||= params[:number_of_hits]
 	end
 
 	def execute
