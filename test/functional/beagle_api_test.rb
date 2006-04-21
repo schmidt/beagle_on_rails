@@ -11,7 +11,7 @@ class BeagleControllerApiTest < Test::Unit::TestCase
   end
 
   def test_execute
-    result = invoke :execute
-    assert_equal nil, result
+    result = invoke :execute, "Hallo"
+    assert_kind_of Search, result
   end
 end
