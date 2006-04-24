@@ -19,5 +19,9 @@ class BeagleControllerApiTest < Test::Unit::TestCase
 		assert search_model.total_time > 0.0
 		assert search_model.number_of_hits > 0
 
+		search_model.results.each { | item |
+			divers = YAML::load( item.divers )
+			assert_kind_of Hash, divers
+		}
 	end
 end

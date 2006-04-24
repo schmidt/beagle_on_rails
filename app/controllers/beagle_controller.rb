@@ -34,7 +34,9 @@ private
 					:type => item.type,
 					:mime_type => item.mime_type,
 					:source => item.source,
-					:time => item.time )
+					:time => item.time,
+					:divers => item.divers.to_yaml
+					)
 				},
 			:first_hit => search.first_hit,
 			:total_time => search.total_time,
