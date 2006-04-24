@@ -1,0 +1,16 @@
+<Combine name="beagle_on_rails_cs_client" fileversion="2.0">
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="beagle_on_rails_cs_client" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="beagle_on_rails_cs_client" configuration="Debug" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="beagle_on_rails_cs_client" single="True">
+    <Execute type="None" entry="beagle_on_rails_cs_client" />
+  </StartMode>
+  <Entries>
+    <Entry filename="./beagle_on_rails_cs_client.mdp" />
+  </Entries>
+</Combine>
