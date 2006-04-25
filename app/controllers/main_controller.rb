@@ -22,7 +22,7 @@ class MainController < ApplicationController
 				@search_results[(@result_pages.current.first_item - 1)..@result_pages.current.last_item - 1]
 		else
 			@search = Search.new Hash.new 
-			render :action => 'start'
+			render :action => 'results'
 		end
 	end
 end
